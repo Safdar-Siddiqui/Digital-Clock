@@ -1,4 +1,4 @@
-h1{
+/* h1{
   font-size: 5vw;
   text-align: center;
 }
@@ -16,7 +16,6 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
   background: linear-gradient(90deg, rgb(0, 255, 191), rgb(0, 98, 128));
 }
 
@@ -34,7 +33,6 @@ body{
     }
     .container span{
       font-family: arial;
-      /* font-family: 'Orbitron', sans-serif; */
       padding: 10px;
       box-sizing: border-box;
       width: auto;
@@ -61,4 +59,93 @@ body{
         opacity: 0;
       }
     }
+ */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url("/bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  /* background: linear-gradient(135deg, aqua, green); */
+}
+
+h1, h2 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+.container {
+  /* transition: all 2s ease; */
+  margin-block: 25px;
+  background-color: transparent;
+  color: red;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px black;
+  font-size: 60px;
+  /* text-shadow: 0px 0px 20px red; */
+}
+
+#hrs,
+#mins,
+#secs {
+  width: 160px;
+  text-align: center;
+}
+
+#am-pm {
+  margin-left: 10px;
+}
+
+.separator {
+  opacity: 1;
+  animation: blink 1s infinite;
+  width: 15px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.calendar {
+  margin-top: 10px;
+}
+
+#date {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  .container,
+  #date {
+    font-size: 30px;
+    /* transition: all 2s ease; */
+  }
+
+  h1, h2 {
+    font-size: 30px;
+  }
+}
