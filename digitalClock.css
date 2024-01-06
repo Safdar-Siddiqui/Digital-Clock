@@ -26,7 +26,7 @@ h1, h2 {
   /* transition: all 2s ease; */
   margin-block: 25px;
   background-color: transparent;
-  color: red;
+  color: rgb(137, 19, 19);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -35,8 +35,8 @@ h1, h2 {
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px black;
-  font-size: 60px;
-  /* text-shadow: 0px 0px 20px red; */
+  font-size: 80px;
+  text-shadow: 1px 1px 1px red;
 }
 
 #hrs,
@@ -73,10 +73,47 @@ h1, h2 {
   width: 100%;
   text-align: center;
   margin: 5px auto;
-  font-size: 50px;
+  font-size: 70px;
 }
 
+@media screen and (max-width: 650px) {
+  .container,
+  #date {
+    font-size: 60px;
+    /* transition: all 2s ease; */
+  }
+
+  h1, h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .container,
+  #date {
+    font-size: 50px;
+    /* transition: all 2s ease; */
+  }
+
+  h1, h2 {
+    font-size: 50px;
+  }
+}
+
+
 @media screen and (max-width: 450px) {
+  .container,
+  #date {
+    font-size: 40px;
+    /* transition: all 2s ease; */
+  }
+
+  h1, h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
   .container,
   #date {
     font-size: 30px;
@@ -87,3 +124,4 @@ h1, h2 {
     font-size: 30px;
   }
 }
+
