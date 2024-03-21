@@ -11,35 +11,15 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  /* background: url("bg.jpg") no-repeat; */
-  /* background-size: 100% 100%; */
   background-color: rgb(33, 40, 40);
-  /* background: linear-gradient(135deg, aqua, green); */
 }
 
-/* h1, h2 {
-  text-align: center;
-  color: black;
-  font-size: 50px;
-} */
-
 .clock {
-  /* transition: all 2s ease; */
-  /* margin-block: 25px;
-  background-color: transparent;
-  color: rgb(137, 19, 19);
-  font-weight: 600; */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 80px;
-  /* flex-direction: column; */
-  /* padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 10px black;
-  font-size: 80px;
-  text-shadow: 1px 1px 1px red; */
 }
 
 #hrDots,
@@ -50,14 +30,6 @@ body {
   height: 200px;
   border-radius: 50%;
   rotate: 90deg;
-  /* justify-content: center;
-  align-items: center;
-  display: flex; */
-  /* font-size: 72px; */
-  /* -webkit-text-stroke: yellow;
-  -webkit-text-fill-color: navy; */
-  /* text-align: center;
-  background-color: orange; */
 }
 
 #hrDots::before,
@@ -183,80 +155,3 @@ body {
   position: relative;
   top: 50px;
 }
-
-
-
-
-
-
-/* .separator {
-  opacity: 1;
-  animation: blink 1s infinite;
-  width: 15px;
-  text-align: center;
-  margin-top: -10px;
-} */
-
-/* @keyframes blink {
-  100% {
-    opacity: 0;
-  }
-}
-
-.calendar {
-  margin-top: 10px;
-} */
-
-/* #date {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 5px auto;
-  font-size: 70px;
-} */
-
-/* @media screen and (max-width: 650px) {
-  .container,
-  #date {
-    font-size: 60px;
-}
-
-  h1, h2 {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  .container,
-  #date {
-    font-size: 50px;
-  }
-
-  h1, h2 {
-    font-size: 50px;
-  }
-}
-
-
-@media screen and (max-width: 450px) {
-  .container,
-  #date {
-    font-size: 40px;
-  }
-
-  h1, h2 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .container,
-  #date {
-    font-size: 30px;
-  }
-
-  h1, h2 {
-    font-size: 30px;
-  }
-} */
-
