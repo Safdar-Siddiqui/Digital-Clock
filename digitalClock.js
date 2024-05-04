@@ -45,9 +45,10 @@ function clock() {
     }
   }
 
-  secDots.innerHTML = secondsDots + '<b>' + amPm + '</b>' + '<h2>' + zero(seconds) + '<br> <span> Seconds </span> </h2>';
-  minDots.innerHTML = minutesDots + '<h2>' + zero(minutes) + '<br> <span> Minutes </span> </h2>';
-  hrDots.innerHTML = hoursDots + '<h2>' + zero(hours) + '<br> <span> Hours </span> </h2>';
+  secDots.innerHTML = secondsDots + '<b>' + amPm + '</b>' + '<h2>' + zero(seconds) + '<br> </h2>';
+  // minDots.innerHTML = minutesDots + '<h2>' + zero(minutes) + '<br> <span> Minutes </span> </h2>';
+  minDots.innerHTML = minutesDots + '<h2>' + zero(minutes) + '<br> </h2>';
+  hrDots.innerHTML = hoursDots + '<h2>' + zero(hours) + '<br> </h2>';
 }
 
 function zero(number) {
